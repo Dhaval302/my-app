@@ -1,0 +1,28 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--header-bg-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin: 0; /* Ensure no margin is added */
+  }
+  
+  .Header-nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .theme-switcher {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 5px;
+  }
+  

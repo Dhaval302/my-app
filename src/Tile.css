@@ -1,0 +1,46 @@
+.tile {
+    width: 250px;
+    margin: 0 10px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tile-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .tile-content {
+    padding: 10px;
+  }
+  
+  .tile-content h2 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  .tile-content p {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .tile-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tile-button:hover {
+    background-color: #0056b3;
+  }
+  
