@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Music Festival",
+    "price": 50,
+    "description": "Enjoy a weekend of live music from top artists.",
+    "quantity": 0
+  },
+  {
+    "name": "Tech Conference",
+    "price": 200,
+    "description": "Learn about the latest trends and innovations in technology.",
+    "quantity": 0
+  },
+  {
+    "name": "Food Tasting",
+    "price": 30,
+    "description": "Savor a variety of gourmet dishes from local chefs.",
+    "quantity": 0
+  },
+  {
+    "name": "Art Exhibition",
+    "price": 20,
+    "description": "Explore stunning artworks by renowned artists.",
+    "quantity": 0
+  },
+  {
+    "name": "Fitness Bootcamp",
+    "price": 100,
+    "description": "Get fit with intensive workout sessions led by fitness experts.",
+    "quantity": 0
+  },
+  {
+    "name": "Fitness Bootcamp2",
+    "price": 100,
+    "description": "Get fit with intensive workout sessions led by fitness experts.",
+    "quantity": 0
+  },
+  {
+    "name": "Fitness Bootcamp3",
+    "price": 100,
+    "description": "Get fit with intensive workout sessions led by fitness experts.",
+    "quantity": 0
+  },
+  {
+    "name": "Fitness Bootcamp4",
+    "price": 100,
+    "description": "Get fit with intensive workout sessions led by fitness experts.",
+    "quantity": 0
+  },
+  {
+    "name": "Darts",
+    "price": 50,
+    "description": "Aim for the bull!!",
+    "quantity": 0
+  }
+]

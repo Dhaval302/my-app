@@ -1,0 +1,86 @@
+Stateless Components:
+    - functional Components
+    - easier to write and do not require lifecycle methods
+    - use props as arguments
+    - return JSX
+        - Javascript XML
+        - syntax for writing JS code commonly using React
+        - write HTML like code is JS
+        -easier to create and manage structures of UI intergfaces
+        - eg: const name = 'John Doe';
+              const element = <h1>Hello, {name}!</h1>;
+    - do not manage state or lifecycle internally, depend on props passed down from parent Components
+    - slight performance advantage because they are simpler and dont have the overhead of class components
+        - overhead of class components
+            - additional complexity and performance cost associated with class based components
+            - lifecycle methods like 'componentDidMount', 'componentDidUpdate' etc which make the code complex and harder to follow and maintain
+    - example: 
+        import React from 'react';
+        const Greeting = (props) => {
+        return <h1>Hello, {props.name}!</h1>;
+        };
+        const App = () => {
+        return (
+            <div>
+            <Greeting name="Alice" />
+            <Greeting name="Bob" />
+            </div>
+        );
+        };
+        export default App;
+    - use react hooks like useState, useEffect etc.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+State components:
+    - manage their own state
+    - either class components or functional components with hooks
+    - class components 
+        - mannage state through 'this.state' property and use 'setState' method to update the state
+        - access to lifecycle methods which allow them to execute specific points in the lifecycle
+        - eg:
+            import React, { Component } from 'react';
+            class Counter extends Component {
+            constructor(props) {
+                super(props);
+                // Initial state
+                this.state = {
+                count: 0
+                };
+            }
+            increment = () => {
+                this.setState(prevState => ({
+                count: prevState.count + 1
+                }));
+            }
+            render() {
+                return (
+                <div>
+                    <p>Count: {this.state.count}</p>
+                    <button onClick={this.increment}>Increment</button>
+                </div>
+                );
+            }
+            }
+            export default Counter;
+    - functional components with hooks 
+        - introduced in react 16.8
+        - manage state using 'useState' hooks
+        - more concise and intutive way to work with state and side effects of functional components
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Pure components
+    - renders same output for the same state and props.
+    - optimize performance by implementing a shallow copy on props and state within 'shouldComponentUpdate' lifecycle method preventing unncessary re-renders.
+        - shallow comparison:
+            - primitive types: (number, string, boolean): compares values
+            - complex types: (object, array, function): compared by reference => even if new array with same data passed, re-render triggered
+    - performance improvement
+    - class based:
+        - extend your component with React.PreComponent
+    - functional components
+        - 'React.memo': higher order component that memoizes the result, preventing re-renders if the props are not changed.
+        - eg: const PureCounter = React.memo(({ count, increment }) => {......} 
+
+--------------------------------------------------------------------------------------------------------------------------------------------

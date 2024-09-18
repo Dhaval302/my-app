@@ -1,0 +1,83 @@
+.tile {
+  /* background-color: #f0f0f0; */
+  position: relative;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 220px;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.btn-buy, .btn-remove, .btn-increment, .btn-decrement {
+  margin-top: 5px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-buy {
+  background-color: green;
+}
+
+.btn-remove {
+  background-color: red;
+}
+
+.btn-increment, .btn-decrement {
+  background-color: blue;
+}
+
+.btn-buy:hover, .btn-remove:hover, .btn-increment:hover, .btn-decrement:hover {
+  opacity: 0.8;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.quantity-controls span {
+  font-size: 16px;
+}
+
+.remove-event {
+  /* position: absolute;
+  top: 1px;
+  right: 1px;
+  background-color: transparent;
+  padding: 2px;
+  /* border: 1px; */
+  /* border-radius: 10px;
+  color: red;
+  cursor: pointer;
+  font-size: 16px; */ 
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: red;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  line-height: 1;
+}
+
+.remove-event:hover {
+  background-color: darkred;
+}
